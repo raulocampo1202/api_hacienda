@@ -25,13 +25,13 @@ global $config;
 #
 #####################################################################################
 # Database name
-$config['db']['name'] = "crlibre_api_demo";
+$config['db']['name'] = "fecrlibredev-database";
 # Database password
-$config['db']['pwd'] = "";
+$config['db']['pwd'] = "8IUMYNUE63OI1P73$";
 # Database user name
-$config['db']['user'] = "root";
+$config['db']['user'] = "jasantvbbm";
 # Database host
-$config['db']['host'] = "localhost";
+$config['db']['host'] = "fecrlibredev-server.mysql.database.azure.com";
 ##############################################################################
 #
 # Crypto Keys
