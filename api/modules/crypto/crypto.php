@@ -40,7 +40,8 @@ function crypto_encrypt($data = '')
     // Se genera un vetor inicial para el proceso
     $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length('aes-256-cbc'));
     // Se encripta usando AES 256 usando la key y el ventor anterior
-    $encrypted = openssl_encrypt($data, 'aes-256-cbc', $key, 0, $iv);
+    // $encrypted = openssl_encrypt($data, 'aes-256-cbc', $key, 0, $iv);
+    $encrypted = openssl_encrypt($data, 'aes-256-cbc', $key);
     // ese vector es necesario guardarlo, por lo que se concatena con ::
     //se encodea a base64 para tener una sala cadena
     $final = base64_encode($encrypted . '::' . $iv);
