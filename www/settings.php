@@ -25,19 +25,19 @@ global $config;
 #
 #####################################################################################
 # Database name
-$config['db']['name'] = "fecrlibredev-database";
+$config['db']['name'] = getenv('DB_NAME');
 # Database password
-$config['db']['pwd'] = "8IUMYNUE63OI1P73$";
+$config['db']['pwd'] = getenv('DB_PASSWORD');
 # Database user name
-$config['db']['user'] = "jasantvbbm";
+$config['db']['user'] = getenv('DB_USERNAME');
 # Database host
-$config['db']['host'] = "fecrlibredev-server.mysql.database.azure.com";
+$config['db']['host'] = getenv('DB_HOST');
 ##############################################################################
 #
 # Crypto Keys
 #
 ##############################################################################
-$config['crypto']['key'] = "By94e\/xvANuBzmszasENsR+ZH4WVkz0O424mb1b6jKk=";
+$config['crypto']['key'] = getenv('cryptoKey');
 ##############################################################################
 #
 # print alerts
